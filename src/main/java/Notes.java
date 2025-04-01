@@ -1,23 +1,21 @@
 
 class Notes {
 	public static void main(String[] args) {
-		System.out.println(fib(46));
+		System.out.println(fib(5));
 	}
 
-  	public static int fib(int num) {
+	public static int fib(int n) {
 
-	    // base case
-	    if (num == 0) {
-	      return 0;
-	    }
-	
-	    if (num == 1) {
-	      return 1;
-	    }
-	
-	    //if a base case runs, the recursive call is unreachable
-		
-	    //recursive call
-		  return fib(num - 1) + fib(num - 2); //recursive call that calls itself
+		// base case: when it stops
+		if (n == 0) {
+			return 0;
+		}
+		if (n == 1) {
+			return 1;
+		}
+
+		// recursive call: what we repeat
+		return fib(n - 1) + fib(n - 2);
 	}
+  	
 }
